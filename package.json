@@ -1,0 +1,46 @@
+{
+  "name": "couchbase-compare",
+  "version": "0.0.1",
+  "description": "NodeJS tool to compare and transfer views between Couchbase Clusters",
+  "homepage": "",
+  "author": {
+    "name": "Mike Goldsmith",
+    "email": "goldsmith.mike@gmail.com",
+    "url": ""
+  },
+  "files": [
+    "src"
+  ],
+  "main": "src/compare.js",
+  "keywords": [
+    ""
+  ],
+  "devDependencies": {
+    "eslint": "^2.1.0",
+    "eslint-config-xo-space": "^0.10.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^2.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-mocha": "^2.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-plumber": "^1.0.0"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": "mikegoldsmith/couchbase-compare",
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "license": "unlicense",
+  "dependencies": {
+    "config": "^1.19.0",
+    "request": "^2.69.0"
+  }
+}
